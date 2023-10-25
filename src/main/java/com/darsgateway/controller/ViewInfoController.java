@@ -32,7 +32,7 @@ public class ViewInfoController {
     }
 
     @PostMapping("/darsgw/view")
-    public ViewResultVO saveDars(@RequestBody ViewInfoModel viewInfoModel) {
+    public ViewResultVO viewDars(@RequestBody ViewInfoModel viewInfoModel) {
         TntDarsCallsEntity tntDarsCallsEntity = new TntDarsCallsEntity();
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -49,6 +49,28 @@ public class ViewInfoController {
             ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
             valueOperations.set(viewInfoModel.getCallId(), parsed);
 
+            ViewResultVO viewResultVO = new ViewResultVO();
+            viewResultVO.setCode(200);
+            viewResultVO.setMsg("성공하였습니다.");
+            return viewResultVO;
+        } catch (Exception e) {
+            e.printStackTrace();
+            ViewResultVO viewResultVO = new ViewResultVO();
+            viewResultVO.setCode(300);
+            viewResultVO.setMsg("실패하였습니다.");
+            return viewResultVO;
+        }
+    }
+
+    @PostMapping("/darsgw/save")
+    public ViewResultVO saveDars(@RequestBody ViewInfoModel viewInfoModel) {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        try {
+            LocalDateTime parse = LocalDateTime.parse(viewInfoModel.getOpenedAt(), dateTimeFormatter);
+            String parsed = parse.format(dtf);
+            ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
+            valueOperations.set(viewInfoModel.getCallId(), parsed);
             ViewResultVO viewResultVO = new ViewResultVO();
             viewResultVO.setCode(200);
             viewResultVO.setMsg("성공하였습니다.");
