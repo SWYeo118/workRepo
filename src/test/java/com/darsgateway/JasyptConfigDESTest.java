@@ -5,7 +5,7 @@ import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.junit.jupiter.api.Test;
 
 public class JasyptConfigDESTest {
-    public String key = "yes3420911$";
+    public String key = "cantshowyou";
 
     @Test
     void stringEncryptor() {
