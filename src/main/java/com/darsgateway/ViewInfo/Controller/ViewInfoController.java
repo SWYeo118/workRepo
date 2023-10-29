@@ -31,8 +31,8 @@ public class ViewInfoController {
             tntDarsCallsEntity.setCall_uuid(viewInfoModel.getCallId());
             tntDarsCallsEntity.setServiceId(viewInfoModel.getServiceId());
             tntDarsCallsEntity.setServiceName(viewInfoModel.getServiceName());
-            LocalDateTime parse = LocalDateTime.parse(viewInfoModel.getOpenedAt(), dateTimeFormatter);
-            String parsed = parse.format(dtf);
+            LocalDateTime parse = LocalDateTime.parse(viewInfoModel.getOpenedAt(), dateTimeFormatter); // String을 해당 LocalDateTime으로 변경
+            String parsed = parse.format(dtf);                                                         // LocalDateTime을 String으로 변경
             tntDarsCallsEntity.setCreateTime(parsed);
             viewInfoRepository.save(tntDarsCallsEntity);
 
