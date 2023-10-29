@@ -1,7 +1,7 @@
 package com.darsgateway;
 
 
-import org.jasypt.encryption.pbe.PooledPBEStringEncryptor;
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.junit.jupiter.api.Test;
 
 public class JasyptConfigDESTest {
@@ -34,14 +34,14 @@ public class JasyptConfigDESTest {
     }
 
     public String jasyptEncoding(String value) {
-        PooledPBEStringEncryptor pbeEnc = new PooledPBEStringEncryptor();
+        StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
         pbeEnc.setAlgorithm("PBEWithMD5AndDES");
         pbeEnc.setPassword(key);
         return pbeEnc.encrypt(value);
     }
 
     public String jasyptDecoding(String value) {
-        PooledPBEStringEncryptor pbeEnc = new PooledPBEStringEncryptor();
+        StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
         pbeEnc.setAlgorithm("PBEWithMD5AndDES");
         pbeEnc.setPassword(key);
         return pbeEnc.decrypt(value);
