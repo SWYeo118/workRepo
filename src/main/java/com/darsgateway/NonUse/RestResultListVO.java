@@ -1,7 +1,6 @@
 package com.darsgateway.NonUse;
 
 import lombok.Data;
-
 import java.util.List;
 
 @Data

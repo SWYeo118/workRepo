@@ -1,0 +1,44 @@
+[2023-10-30 13:54:27:4310] DEBUG 15708 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2023-10-30 13:54:27:4391] DEBUG 15708 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+[2023-10-30 13:54:27:4410] DEBUG 15708 --- [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2023-10-30 13:54:27:4418] DEBUG 15708 --- [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2023-10-30 13:54:32:9898] INFO  15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2023-10-30 13:54:32:9908] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2023-10-30 13:54:32:9908] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2023-10-30 13:54:32:9908] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2023-10-30 13:54:32:9908] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@8804567
+[2023-10-30 13:54:32:9908] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@343c373b
+[2023-10-30 13:54:32:9909] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2023-10-30 13:54:32:9909] INFO  15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[2023-10-30 13:54:32:9916] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/darsgw/view", parameters={}
+[2023-10-30 13:54:32:9926] DEBUG 15708 --- [nio-8090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.darsgateway.ViewInfo.Controller.ViewInfoController#viewDars(ViewInfoModel)
+[2023-10-30 13:54:32:9992] DEBUG 15708 --- [nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ViewInfoModel(index=1, callId=id6, serviceId=serviceId, serviceName=serviceName, openedAt=2023102514 (truncated)...]
+[2023-10-30 13:54:33:10572] DEBUG 15708 --- [nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2023-10-30 13:54:33:10573] DEBUG 15708 --- [nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.darsgateway.ViewInfo.VO.ViewResultVO@457b943b]
+[2023-10-30 13:54:33:10585] DEBUG 15708 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[2023-10-30 14:04:43:4649] DEBUG 15064 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2023-10-30 14:04:43:4712] DEBUG 15064 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+[2023-10-30 14:04:43:4736] DEBUG 15064 --- [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2023-10-30 14:04:43:4743] DEBUG 15064 --- [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2023-10-30 14:06:28:4318] DEBUG 8824 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2023-10-30 14:06:28:4387] DEBUG 8824 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+[2023-10-30 14:06:28:4406] DEBUG 8824 --- [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2023-10-30 14:06:28:4413] DEBUG 8824 --- [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2023-10-30 14:11:50:4626] DEBUG 12320 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[2023-10-30 14:11:50:4694] DEBUG 12320 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+[2023-10-30 14:11:50:4714] DEBUG 12320 --- [  restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2023-10-30 14:11:50:4722] DEBUG 12320 --- [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[2023-10-30 14:11:58:12940] INFO  12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[2023-10-30 14:11:58:12940] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+[2023-10-30 14:11:58:12940] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+[2023-10-30 14:11:58:12940] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+[2023-10-30 14:11:58:12941] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@264b2ea0
+[2023-10-30 14:11:58:12941] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6d328764
+[2023-10-30 14:11:58:12941] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2023-10-30 14:11:58:12941] INFO  12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[2023-10-30 14:11:58:12948] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/darsgw/view", parameters={}
+[2023-10-30 14:11:58:12958] DEBUG 12320 --- [nio-8090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.darsgateway.ViewInfo.Controller.ViewInfoController#viewDars(ViewInfoModel)
+[2023-10-30 14:11:58:13027] DEBUG 12320 --- [nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ViewInfoModel(index=1, callId=id6, serviceId=serviceId, serviceName=serviceName, openedAt=2023102514 (truncated)...]
+[2023-10-30 14:11:58:13533] DEBUG 12320 --- [nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+[2023-10-30 14:11:58:13534] DEBUG 12320 --- [nio-8090-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.darsgateway.ViewInfo.VO.ViewResultVO@3e133779]
+[2023-10-30 14:11:59:13545] DEBUG 12320 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

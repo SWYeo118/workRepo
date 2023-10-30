@@ -38,7 +38,6 @@ public class ViewInfoController {
 
             ValueOperations<String, String> valueOperations = redisTemplate.opsForValue();
             valueOperations.set(viewInfoModel.getCallId(), parsed);
-
             ViewResultVO viewResultVO = new ViewResultVO();
             viewResultVO.setCode(200);
             viewResultVO.setMsg("성공하였습니다.");
